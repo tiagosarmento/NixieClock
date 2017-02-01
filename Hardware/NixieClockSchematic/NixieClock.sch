@@ -1,0 +1,792 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:NixieComponents
+LIBS:NixieClock-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L K155ID1 U?
+U 1 1 5891086A
+P 1900 2450
+F 0 "U?" H 2800 4350 60  0000 C CNN
+F 1 "K155ID1" H 2850 3500 60  0000 C CNN
+F 2 "" H 2850 3500 60  0001 C CNN
+F 3 "" H 2850 3500 60  0001 C CNN
+	1    1900 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 600  2000 3    60   Input ~ 0
+GND
+$Comp
+L IN-1 U?
+U 1 1 589276AC
+P 0 2800
+F 0 "U?" H 1050 4800 60  0000 C CNN
+F 1 "IN-1" H 1150 4200 60  0000 C CNN
+F 2 "" H 1050 4800 60  0001 C CNN
+F 3 "" H 1050 4800 60  0001 C CNN
+	1    0    2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 750  1850 750 
+Wire Wire Line
+	1850 750  1850 950 
+Wire Wire Line
+	1850 950  1750 950 
+Wire Wire Line
+	1750 1050 1900 1050
+Wire Wire Line
+	1900 1050 1900 900 
+Wire Wire Line
+	1900 900  2100 900 
+Wire Wire Line
+	1750 1150 1950 1150
+Wire Wire Line
+	1950 1150 1950 1050
+Wire Wire Line
+	1950 1050 2100 1050
+Wire Wire Line
+	1750 1250 2000 1250
+Wire Wire Line
+	2000 1250 2000 1200
+Wire Wire Line
+	2000 1200 2100 1200
+Wire Wire Line
+	1750 1350 2100 1350
+Wire Wire Line
+	1750 1450 2000 1450
+Wire Wire Line
+	2000 1450 2000 1500
+Wire Wire Line
+	2000 1500 2100 1500
+Wire Wire Line
+	1750 1550 1950 1550
+Wire Wire Line
+	1950 1550 1950 1650
+Wire Wire Line
+	1950 1650 2100 1650
+Wire Wire Line
+	1750 1650 1900 1650
+Wire Wire Line
+	1900 1650 1900 1800
+Wire Wire Line
+	1900 1800 2100 1800
+Wire Wire Line
+	1750 1750 1850 1750
+Wire Wire Line
+	1850 1750 1850 1950
+Wire Wire Line
+	1850 1950 2100 1950
+Wire Wire Line
+	1750 1850 1800 1850
+Wire Wire Line
+	1800 1850 1800 2100
+Wire Wire Line
+	1800 2100 2100 2100
+Wire Wire Line
+	600  2000 600  1850
+Wire Wire Line
+	600  1850 650  1850
+Wire Wire Line
+	3450 800  3800 800 
+$Comp
+L K155ID1 U?
+U 1 1 589284D9
+P 1900 4250
+F 0 "U?" H 2800 6150 60  0000 C CNN
+F 1 "K155ID1" H 2850 5300 60  0000 C CNN
+F 2 "" H 2850 5300 60  0001 C CNN
+F 3 "" H 2850 5300 60  0001 C CNN
+	1    1900 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 600  3800 3    60   Input ~ 0
+GND
+$Comp
+L IN-1 U?
+U 1 1 589284E2
+P 0 4600
+F 0 "U?" H 1050 6600 60  0000 C CNN
+F 1 "IN-1" H 1150 6000 60  0000 C CNN
+F 2 "" H 1050 6600 60  0001 C CNN
+F 3 "" H 1050 6600 60  0001 C CNN
+	1    0    4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2550 1850 2550
+Wire Wire Line
+	1850 2550 1850 2750
+Wire Wire Line
+	1850 2750 1750 2750
+Wire Wire Line
+	1750 2850 1900 2850
+Wire Wire Line
+	1900 2850 1900 2700
+Wire Wire Line
+	1900 2700 2100 2700
+Wire Wire Line
+	1750 2950 1950 2950
+Wire Wire Line
+	1950 2950 1950 2850
+Wire Wire Line
+	1950 2850 2100 2850
+Wire Wire Line
+	1750 3050 2000 3050
+Wire Wire Line
+	2000 3050 2000 3000
+Wire Wire Line
+	2000 3000 2100 3000
+Wire Wire Line
+	1750 3150 2100 3150
+Wire Wire Line
+	1750 3250 2000 3250
+Wire Wire Line
+	2000 3250 2000 3300
+Wire Wire Line
+	2000 3300 2100 3300
+Wire Wire Line
+	1750 3350 1950 3350
+Wire Wire Line
+	1950 3350 1950 3450
+Wire Wire Line
+	1950 3450 2100 3450
+Wire Wire Line
+	1750 3450 1900 3450
+Wire Wire Line
+	1900 3450 1900 3600
+Wire Wire Line
+	1900 3600 2100 3600
+Wire Wire Line
+	1750 3550 1850 3550
+Wire Wire Line
+	1850 3550 1850 3750
+Wire Wire Line
+	1850 3750 2100 3750
+Wire Wire Line
+	1750 3650 1800 3650
+Wire Wire Line
+	1800 3650 1800 3900
+Wire Wire Line
+	1800 3900 2100 3900
+Wire Wire Line
+	600  3800 600  3650
+Wire Wire Line
+	600  3650 650  3650
+Wire Wire Line
+	3450 2600 3800 2600
+$Comp
+L K155ID1 U?
+U 1 1 58929845
+P 1900 6050
+F 0 "U?" H 2800 7950 60  0000 C CNN
+F 1 "K155ID1" H 2850 7100 60  0000 C CNN
+F 2 "" H 2850 7100 60  0001 C CNN
+F 3 "" H 2850 7100 60  0001 C CNN
+	1    1900 6050
+	1    0    0    -1  
+$EndComp
+Text GLabel 600  5600 3    60   Input ~ 0
+GND
+$Comp
+L IN-1 U?
+U 1 1 5892984D
+P 0 6400
+F 0 "U?" H 1050 8400 60  0000 C CNN
+F 1 "IN-1" H 1150 7800 60  0000 C CNN
+F 2 "" H 1050 8400 60  0001 C CNN
+F 3 "" H 1050 8400 60  0001 C CNN
+	1    0    6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4350 1850 4350
+Wire Wire Line
+	1850 4350 1850 4550
+Wire Wire Line
+	1850 4550 1750 4550
+Wire Wire Line
+	1750 4650 1900 4650
+Wire Wire Line
+	1900 4650 1900 4500
+Wire Wire Line
+	1900 4500 2100 4500
+Wire Wire Line
+	1750 4750 1950 4750
+Wire Wire Line
+	1950 4750 1950 4650
+Wire Wire Line
+	1950 4650 2100 4650
+Wire Wire Line
+	1750 4850 2000 4850
+Wire Wire Line
+	2000 4850 2000 4800
+Wire Wire Line
+	2000 4800 2100 4800
+Wire Wire Line
+	1750 4950 2100 4950
+Wire Wire Line
+	1750 5050 2000 5050
+Wire Wire Line
+	2000 5050 2000 5100
+Wire Wire Line
+	2000 5100 2100 5100
+Wire Wire Line
+	1750 5150 1950 5150
+Wire Wire Line
+	1950 5150 1950 5250
+Wire Wire Line
+	1950 5250 2100 5250
+Wire Wire Line
+	1750 5250 1900 5250
+Wire Wire Line
+	1900 5250 1900 5400
+Wire Wire Line
+	1900 5400 2100 5400
+Wire Wire Line
+	1750 5350 1850 5350
+Wire Wire Line
+	1850 5350 1850 5550
+Wire Wire Line
+	1850 5550 2100 5550
+Wire Wire Line
+	1750 5450 1800 5450
+Wire Wire Line
+	1800 5450 1800 5700
+Wire Wire Line
+	1800 5700 2100 5700
+Wire Wire Line
+	600  5600 600  5450
+Wire Wire Line
+	600  5450 650  5450
+Wire Wire Line
+	3450 4400 3850 4400
+$Comp
+L K155ID1 U?
+U 1 1 58929873
+P 1900 7850
+F 0 "U?" H 2800 9750 60  0000 C CNN
+F 1 "K155ID1" H 2850 8900 60  0000 C CNN
+F 2 "" H 2850 8900 60  0001 C CNN
+F 3 "" H 2850 8900 60  0001 C CNN
+	1    1900 7850
+	1    0    0    -1  
+$EndComp
+Text GLabel 600  7400 3    60   Input ~ 0
+GND
+$Comp
+L IN-1 U?
+U 1 1 5892987B
+P 0 8200
+F 0 "U?" H 1050 10200 60  0000 C CNN
+F 1 "IN-1" H 1150 9600 60  0000 C CNN
+F 2 "" H 1050 10200 60  0001 C CNN
+F 3 "" H 1050 10200 60  0001 C CNN
+	1    0    8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 6150 1850 6150
+Wire Wire Line
+	1850 6150 1850 6350
+Wire Wire Line
+	1850 6350 1750 6350
+Wire Wire Line
+	1750 6450 1900 6450
+Wire Wire Line
+	1900 6450 1900 6300
+Wire Wire Line
+	1900 6300 2100 6300
+Wire Wire Line
+	1750 6550 1950 6550
+Wire Wire Line
+	1950 6550 1950 6450
+Wire Wire Line
+	1950 6450 2100 6450
+Wire Wire Line
+	1750 6650 2000 6650
+Wire Wire Line
+	2000 6650 2000 6600
+Wire Wire Line
+	2000 6600 2100 6600
+Wire Wire Line
+	1750 6750 2100 6750
+Wire Wire Line
+	1750 6850 2000 6850
+Wire Wire Line
+	2000 6850 2000 6900
+Wire Wire Line
+	2000 6900 2100 6900
+Wire Wire Line
+	1750 6950 1950 6950
+Wire Wire Line
+	1950 6950 1950 7050
+Wire Wire Line
+	1950 7050 2100 7050
+Wire Wire Line
+	1750 7050 1900 7050
+Wire Wire Line
+	1900 7050 1900 7200
+Wire Wire Line
+	1900 7200 2100 7200
+Wire Wire Line
+	1750 7150 1850 7150
+Wire Wire Line
+	1850 7150 1850 7350
+Wire Wire Line
+	1850 7350 2100 7350
+Wire Wire Line
+	1750 7250 1800 7250
+Wire Wire Line
+	1800 7250 1800 7500
+Wire Wire Line
+	1800 7500 2100 7500
+Wire Wire Line
+	600  7400 600  7250
+Wire Wire Line
+	600  7250 650  7250
+Wire Wire Line
+	3450 6200 3850 6200
+$Comp
+L SN74HC595N U?
+U 1 1 5892990B
+P 4200 3250
+F 0 "U?" H 5300 4800 50  0000 C CNN
+F 1 "SN74HC595N" H 5300 4050 50  0000 C CNN
+F 2 "" H 4900 3900 50  0000 C CNN
+F 3 "" H 4900 3900 50  0000 C CNN
+	1    4200 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 800  2    60   Input ~ 0
+5v
+Text GLabel 3800 2600 2    60   Input ~ 0
+5v
+Text GLabel 3800 2050 2    60   Input ~ 0
+GND
+Text GLabel 3800 3850 2    60   Input ~ 0
+GND
+Wire Wire Line
+	3450 2050 3800 2050
+Wire Wire Line
+	3800 3850 3450 3850
+Wire Wire Line
+	3450 1050 4450 1050
+Wire Wire Line
+	4450 1050 4450 1900
+Wire Wire Line
+	4450 1900 4550 1900
+Wire Wire Line
+	3450 1300 4350 1300
+Wire Wire Line
+	4350 1300 4350 2050
+Wire Wire Line
+	4350 2050 4550 2050
+Wire Wire Line
+	3450 1550 4250 1550
+Wire Wire Line
+	4250 1550 4250 2200
+Wire Wire Line
+	4250 2200 4550 2200
+Wire Wire Line
+	3450 1800 4150 1800
+Wire Wire Line
+	4150 1800 4150 2350
+Wire Wire Line
+	4150 2350 4550 2350
+Wire Wire Line
+	3450 2850 4150 2850
+Wire Wire Line
+	4150 2850 4150 2500
+Wire Wire Line
+	4150 2500 4550 2500
+Wire Wire Line
+	3450 3100 4250 3100
+Wire Wire Line
+	4250 3100 4250 2650
+Wire Wire Line
+	4250 2650 4550 2650
+Wire Wire Line
+	3450 3350 4350 3350
+Wire Wire Line
+	4350 3350 4350 2800
+Wire Wire Line
+	4350 2800 4550 2800
+Wire Wire Line
+	3450 3600 4450 3600
+Wire Wire Line
+	4450 3600 4450 2950
+Wire Wire Line
+	4450 2950 4550 2950
+$Comp
+L SN74HC595N U?
+U 1 1 5892BF1D
+P 4200 6900
+F 0 "U?" H 5300 8450 50  0000 C CNN
+F 1 "SN74HC595N" H 5300 7700 50  0000 C CNN
+F 2 "" H 4900 7550 50  0000 C CNN
+F 3 "" H 4900 7550 50  0000 C CNN
+	1    4200 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 5650 2    60   Input ~ 0
+GND
+Wire Wire Line
+	3800 5650 3450 5650
+Text GLabel 3800 7450 2    60   Input ~ 0
+GND
+Wire Wire Line
+	3800 7450 3450 7450
+Text GLabel 3850 4400 2    60   Input ~ 0
+5v
+Text GLabel 3850 6200 2    60   Input ~ 0
+5v
+Wire Wire Line
+	3450 4650 4450 4650
+Wire Wire Line
+	4450 4650 4450 5550
+Wire Wire Line
+	4450 5550 4550 5550
+Wire Wire Line
+	3450 4900 4350 4900
+Wire Wire Line
+	4350 4900 4350 5700
+Wire Wire Line
+	4350 5700 4550 5700
+Wire Wire Line
+	4550 5850 4250 5850
+Wire Wire Line
+	4250 5850 4250 5150
+Wire Wire Line
+	4250 5150 3450 5150
+Wire Wire Line
+	3450 5400 4150 5400
+Wire Wire Line
+	4150 5400 4150 6000
+Wire Wire Line
+	4150 6000 4550 6000
+Wire Wire Line
+	3450 6450 4150 6450
+Wire Wire Line
+	4150 6450 4150 6150
+Wire Wire Line
+	4150 6150 4550 6150
+Wire Wire Line
+	3450 6700 4250 6700
+Wire Wire Line
+	4250 6700 4250 6300
+Wire Wire Line
+	4250 6300 4550 6300
+Wire Wire Line
+	3450 6950 4350 6950
+Wire Wire Line
+	4350 6950 4350 6450
+Wire Wire Line
+	4350 6450 4550 6450
+Wire Wire Line
+	3450 7200 4450 7200
+Wire Wire Line
+	4450 7200 4450 6600
+Wire Wire Line
+	4450 6600 4550 6600
+$Comp
+L K155ID1 U?
+U 1 1 58932E54
+P 9750 4150
+F 0 "U?" H 10650 6050 60  0000 C CNN
+F 1 "K155ID1" H 10700 5200 60  0000 C CNN
+F 2 "" H 10700 5200 60  0001 C CNN
+F 3 "" H 10700 5200 60  0001 C CNN
+	1    9750 4150
+	-1   0    0    -1  
+$EndComp
+Text GLabel 11050 3700 3    60   Input ~ 0
+GND
+$Comp
+L IN-1 U?
+U 1 1 58932E5C
+P 11650 4500
+F 0 "U?" H 12700 6500 60  0000 C CNN
+F 1 "IN-1" H 12800 5900 60  0000 C CNN
+F 2 "" H 12700 6500 60  0001 C CNN
+F 3 "" H 12700 6500 60  0001 C CNN
+	1    11650 4500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 2450 9800 2450
+Wire Wire Line
+	9800 2450 9800 2650
+Wire Wire Line
+	9800 2650 9900 2650
+Wire Wire Line
+	9900 2750 9750 2750
+Wire Wire Line
+	9750 2750 9750 2600
+Wire Wire Line
+	9750 2600 9550 2600
+Wire Wire Line
+	9900 2850 9700 2850
+Wire Wire Line
+	9700 2850 9700 2750
+Wire Wire Line
+	9700 2750 9550 2750
+Wire Wire Line
+	9900 2950 9650 2950
+Wire Wire Line
+	9650 2950 9650 2900
+Wire Wire Line
+	9650 2900 9550 2900
+Wire Wire Line
+	9900 3050 9550 3050
+Wire Wire Line
+	9900 3150 9650 3150
+Wire Wire Line
+	9650 3150 9650 3200
+Wire Wire Line
+	9650 3200 9550 3200
+Wire Wire Line
+	9900 3250 9700 3250
+Wire Wire Line
+	9700 3250 9700 3350
+Wire Wire Line
+	9700 3350 9550 3350
+Wire Wire Line
+	9900 3350 9750 3350
+Wire Wire Line
+	9750 3350 9750 3500
+Wire Wire Line
+	9750 3500 9550 3500
+Wire Wire Line
+	9900 3450 9800 3450
+Wire Wire Line
+	9800 3450 9800 3650
+Wire Wire Line
+	9800 3650 9550 3650
+Wire Wire Line
+	9900 3550 9850 3550
+Wire Wire Line
+	9850 3550 9850 3800
+Wire Wire Line
+	9850 3800 9550 3800
+Wire Wire Line
+	11050 3700 11050 3550
+Wire Wire Line
+	11050 3550 11000 3550
+Wire Wire Line
+	8200 2500 7850 2500
+$Comp
+L K155ID1 U?
+U 1 1 58932E82
+P 9750 5950
+F 0 "U?" H 10650 7850 60  0000 C CNN
+F 1 "K155ID1" H 10700 7000 60  0000 C CNN
+F 2 "" H 10700 7000 60  0001 C CNN
+F 3 "" H 10700 7000 60  0001 C CNN
+	1    9750 5950
+	-1   0    0    -1  
+$EndComp
+Text GLabel 11050 5500 3    60   Input ~ 0
+GND
+$Comp
+L IN-1 U?
+U 1 1 58932E8A
+P 11650 6300
+F 0 "U?" H 12700 8300 60  0000 C CNN
+F 1 "IN-1" H 12800 7700 60  0000 C CNN
+F 2 "" H 12700 8300 60  0001 C CNN
+F 3 "" H 12700 8300 60  0001 C CNN
+	1    11650 6300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 4250 9800 4250
+Wire Wire Line
+	9800 4250 9800 4450
+Wire Wire Line
+	9800 4450 9900 4450
+Wire Wire Line
+	9900 4550 9750 4550
+Wire Wire Line
+	9750 4550 9750 4400
+Wire Wire Line
+	9750 4400 9550 4400
+Wire Wire Line
+	9900 4650 9700 4650
+Wire Wire Line
+	9700 4650 9700 4550
+Wire Wire Line
+	9700 4550 9550 4550
+Wire Wire Line
+	9900 4750 9650 4750
+Wire Wire Line
+	9650 4750 9650 4700
+Wire Wire Line
+	9650 4700 9550 4700
+Wire Wire Line
+	9900 4850 9550 4850
+Wire Wire Line
+	9900 4950 9650 4950
+Wire Wire Line
+	9650 4950 9650 5000
+Wire Wire Line
+	9650 5000 9550 5000
+Wire Wire Line
+	9900 5050 9700 5050
+Wire Wire Line
+	9700 5050 9700 5150
+Wire Wire Line
+	9700 5150 9550 5150
+Wire Wire Line
+	9900 5150 9750 5150
+Wire Wire Line
+	9750 5150 9750 5300
+Wire Wire Line
+	9750 5300 9550 5300
+Wire Wire Line
+	9900 5250 9800 5250
+Wire Wire Line
+	9800 5250 9800 5450
+Wire Wire Line
+	9800 5450 9550 5450
+Wire Wire Line
+	9900 5350 9850 5350
+Wire Wire Line
+	9850 5350 9850 5600
+Wire Wire Line
+	9850 5600 9550 5600
+Wire Wire Line
+	11050 5500 11050 5350
+Wire Wire Line
+	11050 5350 11000 5350
+Wire Wire Line
+	8200 4300 7850 4300
+$Comp
+L SN74HC595N U?
+U 1 1 58932EB0
+P 7450 4950
+F 0 "U?" H 8550 6500 50  0000 C CNN
+F 1 "SN74HC595N" H 8550 5750 50  0000 C CNN
+F 2 "" H 8150 5600 50  0000 C CNN
+F 3 "" H 8150 5600 50  0000 C CNN
+	1    7450 4950
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7850 2500 0    60   Input ~ 0
+5v
+Text GLabel 7850 4300 0    60   Input ~ 0
+5v
+Text GLabel 7850 3750 0    60   Input ~ 0
+GND
+Text GLabel 7850 5550 0    60   Input ~ 0
+GND
+Wire Wire Line
+	8200 3750 7850 3750
+Wire Wire Line
+	7850 5550 8200 5550
+Wire Wire Line
+	8200 2750 7200 2750
+Wire Wire Line
+	7200 2750 7200 3600
+Wire Wire Line
+	7200 3600 7100 3600
+Wire Wire Line
+	8200 3000 7300 3000
+Wire Wire Line
+	7300 3000 7300 3750
+Wire Wire Line
+	7300 3750 7100 3750
+Wire Wire Line
+	8200 3250 7400 3250
+Wire Wire Line
+	7400 3250 7400 3900
+Wire Wire Line
+	7400 3900 7100 3900
+Wire Wire Line
+	8200 3500 7500 3500
+Wire Wire Line
+	7500 3500 7500 4050
+Wire Wire Line
+	7500 4050 7100 4050
+Wire Wire Line
+	8200 4550 7500 4550
+Wire Wire Line
+	7500 4550 7500 4200
+Wire Wire Line
+	7500 4200 7100 4200
+Wire Wire Line
+	8200 4800 7400 4800
+Wire Wire Line
+	7400 4800 7400 4350
+Wire Wire Line
+	7400 4350 7100 4350
+Wire Wire Line
+	8200 5050 7300 5050
+Wire Wire Line
+	7300 5050 7300 4500
+Wire Wire Line
+	7300 4500 7100 4500
+Wire Wire Line
+	8200 5300 7200 5300
+Wire Wire Line
+	7200 5300 7200 4650
+Wire Wire Line
+	7200 4650 7100 4650
+Wire Wire Line
+	6100 1900 6450 1900
+Text GLabel 6450 1900 2    60   Input ~ 0
+5v
+Wire Wire Line
+	6100 5550 6450 5550
+Text GLabel 6450 5550 2    60   Input ~ 0
+5v
+Text GLabel 6450 2950 2    60   Input ~ 0
+GND
+Wire Wire Line
+	6450 2950 6100 2950
+Text GLabel 6450 6600 2    60   Input ~ 0
+GND
+Wire Wire Line
+	6450 6600 6100 6600
+$EndSCHEMATC
