@@ -1,0 +1,27 @@
+################################################################################
+######## Bill Of Materials - BOM List ########
+################################################################################
+
+--------------------------------------------------------------------------------
+Qty. | Description
+--------------------------------------------------------------------------------
+1    | Tiva C Series Microcontroller TM4C123G
+1    | TI Simple Link WiFi CC3100 Booster Pack
+1    | Buzzer
+6    | Nixie Tubes IN-1 (RUSSIAN: ИН-1)
+2    | Nixie LED INS-1 (RUSSIAN: ИНC-1)
+6    | Nixie Driver K155ID1 (RUSSIAN: K155ИД1)
+1    | Dc/Dc Converter Input 9v-12v Ouput 85v-220v
+1    | On/Off Button
+3    | Push Buttons
+3    | Resistor 3 Kohm
+1    | Resistor 1.5 Kohm
+6    | Resistor 20 Kohm
+30   | Resistor 330 ohm
+5    | Resistor 100 Kohm
+5    | Transistor NPN 2N4410
+3    | Transistor NPN MPSA42
+6    | RGB LED
+1    | Capacitor 1uF 16v
+3    | Shift Register SN74HC595N
+--------------------------------------------------------------------------------

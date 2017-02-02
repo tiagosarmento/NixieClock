@@ -29,14 +29,13 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:NixieComponents
-LIBS:NixieClock-cache
-EELAYER 25 0
+EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date ""
+Date "2 feb 2017"
 Rev ""
 Comp ""
 Comment1 ""
@@ -789,4 +788,24 @@ Text GLabel 6450 6600 2    60   Input ~ 0
 GND
 Wire Wire Line
 	6450 6600 6100 6600
+Text GLabel 6450 2050 2    60   Input ~ 0
+uc PORTX
+Wire Wire Line
+	6450 2050 6100 2050
+Text GLabel 6450 2650 2    60   Input ~ 0
+uc PORTX
+Wire Wire Line
+	6450 2650 6100 2650
+Text GLabel 6450 2200 2    60   Input ~ 0
+uc PORTX
+Wire Wire Line
+	6450 2200 6100 2200
+Text GLabel 6450 2500 2    60   Input ~ 0
+GND
+Wire Wire Line
+	6450 2500 6100 2500
+Wire Wire Line
+	6100 2350 6450 2350
+Text GLabel 6450 2350 2    60   Input ~ 0
+5v
 $EndSCHEMATC
