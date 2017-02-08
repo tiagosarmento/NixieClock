@@ -29,18 +29,19 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:NixieComponents
+LIBS:NixieClock-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
-Title "Nixie Clock"
-Date "2 feb 2017"
+Sheet 1 2
+Title "NixieClock"
+Date "2017-02-08"
 Rev "1.0"
-Comp ""
-Comment1 "Nixies Tubes"
-Comment2 "Nixie Tubes Drivers"
-Comment3 "Shift Registers"
+Comp "TiagoSarmentoSantos"
+Comment1 "Nixie Tubes Schema"
+Comment2 "Nixie Drivers Schema"
+Comment3 "Shift Registers Schema"
 Comment4 ""
 $EndDescr
 $Comp
@@ -984,4 +985,324 @@ Text Label 7400 2200 0    60   ~ 0
 NixieTubesSeconds
 Text Label 4600 1500 0    60   ~ 0
 ShiftRegisters
+$Comp
+L K155ID1 U?
+U 1 1 589CA9D6
+P 1900 2450
+F 0 "U?" H 2800 4350 60  0000 C CNN
+F 1 "K155ID1" H 2850 3500 60  0000 C CNN
+F 2 "" H 2850 3500 60  0001 C CNN
+F 3 "" H 2850 3500 60  0001 C CNN
+	1    1900 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 600  1000 1    60   Input ~ 0
+180v
+$Comp
+L IN-1 U?
+U 1 1 589CA9D7
+P 0 2800
+F 0 "U?" H 1050 4800 60  0000 C CNN
+F 1 "IN-1" H 1150 4200 60  0000 C CNN
+F 2 "" H 1050 4800 60  0001 C CNN
+F 3 "" H 1050 4800 60  0001 C CNN
+	1    0    2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L K155ID1 U?
+U 1 1 589CA9D8
+P 1900 4250
+F 0 "U?" H 2800 6150 60  0000 C CNN
+F 1 "K155ID1" H 2850 5300 60  0000 C CNN
+F 2 "" H 2850 5300 60  0001 C CNN
+F 3 "" H 2850 5300 60  0001 C CNN
+	1    1900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L IN-1 U?
+U 1 1 589CA9D9
+P 0 4600
+F 0 "U?" H 1050 6600 60  0000 C CNN
+F 1 "IN-1" H 1150 6000 60  0000 C CNN
+F 2 "" H 1050 6600 60  0001 C CNN
+F 3 "" H 1050 6600 60  0001 C CNN
+	1    0    4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L K155ID1 U?
+U 1 1 589CA9DA
+P 1900 6050
+F 0 "U?" H 2800 7950 60  0000 C CNN
+F 1 "K155ID1" H 2850 7100 60  0000 C CNN
+F 2 "" H 2850 7100 60  0001 C CNN
+F 3 "" H 2850 7100 60  0001 C CNN
+	1    1900 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L IN-1 U?
+U 1 1 589CA9DB
+P 0 6400
+F 0 "U?" H 1050 8400 60  0000 C CNN
+F 1 "IN-1" H 1150 7800 60  0000 C CNN
+F 2 "" H 1050 8400 60  0001 C CNN
+F 3 "" H 1050 8400 60  0001 C CNN
+	1    0    6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L K155ID1 U?
+U 1 1 589CA9DC
+P 1900 7850
+F 0 "U?" H 2800 9750 60  0000 C CNN
+F 1 "K155ID1" H 2850 8900 60  0000 C CNN
+F 2 "" H 2850 8900 60  0001 C CNN
+F 3 "" H 2850 8900 60  0001 C CNN
+	1    1900 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L IN-1 U?
+U 1 1 589CA9DD
+P 0 8200
+F 0 "U?" H 1050 10200 60  0000 C CNN
+F 1 "IN-1" H 1150 9600 60  0000 C CNN
+F 2 "" H 1050 10200 60  0001 C CNN
+F 3 "" H 1050 10200 60  0001 C CNN
+	1    0    8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74HC595N U?
+U 1 1 589CA9DE
+P 4200 3250
+F 0 "U?" H 5300 4800 50  0000 C CNN
+F 1 "SN74HC595N" H 5300 4050 50  0000 C CNN
+F 2 "" H 4900 3900 50  0000 C CNN
+F 3 "" H 4900 3900 50  0000 C CNN
+	1    4200 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 800  2    60   Input ~ 0
+5v
+Text GLabel 3800 2600 2    60   Input ~ 0
+5v
+Text GLabel 3800 2050 2    60   Input ~ 0
+GND
+Text GLabel 3800 3850 2    60   Input ~ 0
+GND
+$Comp
+L SN74HC595N U?
+U 1 1 589CA9DF
+P 4200 6900
+F 0 "U?" H 5300 8450 50  0000 C CNN
+F 1 "SN74HC595N" H 5300 7700 50  0000 C CNN
+F 2 "" H 4900 7550 50  0000 C CNN
+F 3 "" H 4900 7550 50  0000 C CNN
+	1    4200 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 5650 2    60   Input ~ 0
+GND
+Text GLabel 3800 7450 2    60   Input ~ 0
+GND
+Text GLabel 3850 4400 2    60   Input ~ 0
+5v
+Text GLabel 3850 6200 2    60   Input ~ 0
+5v
+$Comp
+L K155ID1 U?
+U 1 1 589CA9E0
+P 9750 4150
+F 0 "U?" H 10650 6050 60  0000 C CNN
+F 1 "K155ID1" H 10700 5200 60  0000 C CNN
+F 2 "" H 10700 5200 60  0001 C CNN
+F 3 "" H 10700 5200 60  0001 C CNN
+	1    9750 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L IN-1 U?
+U 1 1 589CA9E1
+P 11650 4500
+F 0 "U?" H 12700 6500 60  0000 C CNN
+F 1 "IN-1" H 12800 5900 60  0000 C CNN
+F 2 "" H 12700 6500 60  0001 C CNN
+F 3 "" H 12700 6500 60  0001 C CNN
+	1    11650 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L K155ID1 U?
+U 1 1 589CA9E2
+P 9750 5950
+F 0 "U?" H 10650 7850 60  0000 C CNN
+F 1 "K155ID1" H 10700 7000 60  0000 C CNN
+F 2 "" H 10700 7000 60  0001 C CNN
+F 3 "" H 10700 7000 60  0001 C CNN
+	1    9750 5950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L IN-1 U?
+U 1 1 589CA9E3
+P 11650 6300
+F 0 "U?" H 12700 8300 60  0000 C CNN
+F 1 "IN-1" H 12800 7700 60  0000 C CNN
+F 2 "" H 12700 8300 60  0001 C CNN
+F 3 "" H 12700 8300 60  0001 C CNN
+	1    11650 6300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SN74HC595N U?
+U 1 1 589CA9E4
+P 7450 4950
+F 0 "U?" H 8550 6500 50  0000 C CNN
+F 1 "SN74HC595N" H 8550 5750 50  0000 C CNN
+F 2 "" H 8150 5600 50  0000 C CNN
+F 3 "" H 8150 5600 50  0000 C CNN
+	1    7450 4950
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7850 2500 0    60   Input ~ 0
+5v
+Text GLabel 7850 4300 0    60   Input ~ 0
+5v
+Text GLabel 7850 3750 0    60   Input ~ 0
+GND
+Text GLabel 7850 5550 0    60   Input ~ 0
+GND
+Text GLabel 6450 1900 2    60   Input ~ 0
+5v
+Text GLabel 6450 5550 2    60   Input ~ 0
+5v
+Text GLabel 6450 2950 2    60   Input ~ 0
+GND
+Text GLabel 6450 6600 2    60   Input ~ 0
+GND
+Text GLabel 6450 2050 2    60   Input ~ 0
+uc PORTX
+Text GLabel 6450 2650 2    60   Input ~ 0
+uc PORTX
+Text GLabel 6450 2200 2    60   Input ~ 0
+uc PORTX
+Text GLabel 6450 2500 2    60   Input ~ 0
+GND
+Text GLabel 6450 2350 2    60   Input ~ 0
+5v
+Text GLabel 6450 6000 2    60   Input ~ 0
+5v
+Text GLabel 6450 5850 2    60   Input ~ 0
+uc PORTX
+Text GLabel 6450 6300 2    60   Input ~ 0
+uc PORTX
+Text GLabel 6450 6150 2    60   Input ~ 0
+GND
+Text GLabel 5200 4650 0    60   Input ~ 0
+GND
+Text GLabel 5200 4050 0    60   Input ~ 0
+5v
+Text GLabel 5200 3900 0    60   Input ~ 0
+uc PORTX
+Text GLabel 5200 4350 0    60   Input ~ 0
+uc PORTX
+Text GLabel 5200 4200 0    60   Input ~ 0
+GND
+Text GLabel 5200 3600 0    60   Input ~ 0
+5v
+$Comp
+L R R?
+U 1 1 589CA9E5
+P 600 1400
+F 0 "R?" V 680 1400 50  0000 C CNN
+F 1 "20K" V 600 1400 50  0000 C CNN
+F 2 "" V 530 1400 50  0000 C CNN
+F 3 "" H 600 1400 50  0000 C CNN
+	1    600  1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 600  2800 1    60   Input ~ 0
+180v
+$Comp
+L R R?
+U 1 1 589CA9E6
+P 600 3250
+F 0 "R?" V 680 3250 50  0000 C CNN
+F 1 "20K" V 600 3250 50  0000 C CNN
+F 2 "" V 530 3250 50  0000 C CNN
+F 3 "" H 600 3250 50  0000 C CNN
+	1    600  3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 600  6400 1    60   Input ~ 0
+180v
+$Comp
+L R R?
+U 1 1 589CA9E7
+P 600 6850
+F 0 "R?" V 680 6850 50  0000 C CNN
+F 1 "20K" V 600 6850 50  0000 C CNN
+F 2 "" V 530 6850 50  0000 C CNN
+F 3 "" H 600 6850 50  0000 C CNN
+	1    600  6850
+	1    0    0    -1  
+$EndComp
+Text GLabel 600  4600 1    60   Input ~ 0
+180v
+$Comp
+L R R?
+U 1 1 589CA9E8
+P 600 5050
+F 0 "R?" V 680 5050 50  0000 C CNN
+F 1 "20K" V 600 5050 50  0000 C CNN
+F 2 "" V 530 5050 50  0000 C CNN
+F 3 "" H 600 5050 50  0000 C CNN
+	1    600  5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 11050 4500 1    60   Input ~ 0
+180v
+$Comp
+L R R?
+U 1 1 589CA9E9
+P 11050 4950
+F 0 "R?" V 11130 4950 50  0000 C CNN
+F 1 "20K" V 11050 4950 50  0000 C CNN
+F 2 "" V 10980 4950 50  0000 C CNN
+F 3 "" H 11050 4950 50  0000 C CNN
+	1    11050 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 11050 2700 1    60   Input ~ 0
+180v
+$Comp
+L R R?
+U 1 1 589CA9EA
+P 11050 3150
+F 0 "R?" V 11130 3150 50  0000 C CNN
+F 1 "20K" V 11050 3150 50  0000 C CNN
+F 2 "" V 10980 3150 50  0000 C CNN
+F 3 "" H 11050 3150 50  0000 C CNN
+	1    11050 3150
+	1    0    0    -1  
+$EndComp
+Text Label 550  600  0    60   ~ 0
+NixieTubesHours
+Text Label 550  4200 0    60   ~ 0
+NixieTubesMinutes
+Text Label 7400 2200 0    60   ~ 0
+NixieTubesSeconds
+Text Label 4600 1500 0    60   ~ 0
+ShiftRegisters
+NoConn ~ 6100 6450
+$Sheet
+S 10100 6800 500  150 
+U 589CF1A0
+F0 "NixieClock_2" 60
+F1 "NixieClock_2.sch" 60
+$EndSheet
 $EndSCHEMATC
