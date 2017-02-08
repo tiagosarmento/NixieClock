@@ -29,18 +29,18 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:NixieComponents
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Nixie Clock"
 Date "2 feb 2017"
-Rev ""
+Rev "1.0"
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Comment1 "Nixies Tubes"
+Comment2 "Nixie Tubes Drivers"
+Comment3 "Shift Registers"
 Comment4 ""
 $EndDescr
 $Comp
@@ -54,8 +54,8 @@ F 3 "" H 2850 3500 60  0001 C CNN
 	1    1900 2450
 	1    0    0    -1  
 $EndComp
-Text GLabel 600  2000 3    60   Input ~ 0
-GND
+Text GLabel 600  1000 1    60   Input ~ 0
+180v
 $Comp
 L IN-1 U?
 U 1 1 589276AC
@@ -124,10 +124,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 2100 2100 2100
 Wire Wire Line
-	600  2000 600  1850
-Wire Wire Line
-	600  1850 650  1850
-Wire Wire Line
 	3450 800  3800 800 
 $Comp
 L K155ID1 U?
@@ -140,8 +136,6 @@ F 3 "" H 2850 5300 60  0001 C CNN
 	1    1900 4250
 	1    0    0    -1  
 $EndComp
-Text GLabel 600  3800 3    60   Input ~ 0
-GND
 $Comp
 L IN-1 U?
 U 1 1 589284E2
@@ -210,10 +204,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 3900 2100 3900
 Wire Wire Line
-	600  3800 600  3650
-Wire Wire Line
-	600  3650 650  3650
-Wire Wire Line
 	3450 2600 3800 2600
 $Comp
 L K155ID1 U?
@@ -226,8 +216,6 @@ F 3 "" H 2850 7100 60  0001 C CNN
 	1    1900 6050
 	1    0    0    -1  
 $EndComp
-Text GLabel 600  5600 3    60   Input ~ 0
-GND
 $Comp
 L IN-1 U?
 U 1 1 5892984D
@@ -296,10 +284,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 5700 2100 5700
 Wire Wire Line
-	600  5600 600  5450
-Wire Wire Line
-	600  5450 650  5450
-Wire Wire Line
 	3450 4400 3850 4400
 $Comp
 L K155ID1 U?
@@ -312,8 +296,6 @@ F 3 "" H 2850 8900 60  0001 C CNN
 	1    1900 7850
 	1    0    0    -1  
 $EndComp
-Text GLabel 600  7400 3    60   Input ~ 0
-GND
 $Comp
 L IN-1 U?
 U 1 1 5892987B
@@ -381,10 +363,6 @@ Wire Wire Line
 	1800 7250 1800 7500
 Wire Wire Line
 	1800 7500 2100 7500
-Wire Wire Line
-	600  7400 600  7250
-Wire Wire Line
-	600  7250 650  7250
 Wire Wire Line
 	3450 6200 3850 6200
 $Comp
@@ -540,8 +518,6 @@ F 3 "" H 10700 5200 60  0001 C CNN
 	1    9750 4150
 	-1   0    0    -1  
 $EndComp
-Text GLabel 11050 3700 3    60   Input ~ 0
-GND
 $Comp
 L IN-1 U?
 U 1 1 58932E5C
@@ -610,10 +586,6 @@ Wire Wire Line
 Wire Wire Line
 	9850 3800 9550 3800
 Wire Wire Line
-	11050 3700 11050 3550
-Wire Wire Line
-	11050 3550 11000 3550
-Wire Wire Line
 	8200 2500 7850 2500
 $Comp
 L K155ID1 U?
@@ -626,8 +598,6 @@ F 3 "" H 10700 7000 60  0001 C CNN
 	1    9750 5950
 	-1   0    0    -1  
 $EndComp
-Text GLabel 11050 5500 3    60   Input ~ 0
-GND
 $Comp
 L IN-1 U?
 U 1 1 58932E8A
@@ -695,10 +665,6 @@ Wire Wire Line
 	9850 5350 9850 5600
 Wire Wire Line
 	9850 5600 9550 5600
-Wire Wire Line
-	11050 5500 11050 5350
-Wire Wire Line
-	11050 5350 11000 5350
 Wire Wire Line
 	8200 4300 7850 4300
 $Comp
@@ -808,4 +774,214 @@ Wire Wire Line
 	6100 2350 6450 2350
 Text GLabel 6450 2350 2    60   Input ~ 0
 5v
+Wire Wire Line
+	6100 6000 6450 6000
+Text GLabel 6450 6000 2    60   Input ~ 0
+5v
+Text GLabel 6450 5850 2    60   Input ~ 0
+uc PORTX
+Wire Wire Line
+	6450 5850 6100 5850
+Text GLabel 6450 6300 2    60   Input ~ 0
+uc PORTX
+Wire Wire Line
+	6450 6300 6100 6300
+Text GLabel 6450 6150 2    60   Input ~ 0
+GND
+Wire Wire Line
+	6450 6150 6100 6150
+Wire Wire Line
+	6100 2800 7000 2800
+Wire Wire Line
+	7000 2800 7000 3250
+Wire Wire Line
+	7000 3250 4600 3250
+Wire Wire Line
+	4600 3250 4600 3750
+Wire Wire Line
+	4600 3750 5550 3750
+Wire Wire Line
+	6100 5700 6900 5700
+Wire Wire Line
+	6900 5700 6900 5100
+Wire Wire Line
+	6900 5100 4650 5100
+Wire Wire Line
+	4650 5100 4650 4500
+Wire Wire Line
+	4650 4500 5550 4500
+Text GLabel 5200 4650 0    60   Input ~ 0
+GND
+Wire Wire Line
+	5200 4650 5550 4650
+Wire Wire Line
+	5550 4050 5200 4050
+Text GLabel 5200 4050 0    60   Input ~ 0
+5v
+Text GLabel 5200 3900 0    60   Input ~ 0
+uc PORTX
+Wire Wire Line
+	5200 3900 5550 3900
+Text GLabel 5200 4350 0    60   Input ~ 0
+uc PORTX
+Wire Wire Line
+	5200 4350 5550 4350
+Text GLabel 5200 4200 0    60   Input ~ 0
+GND
+Wire Wire Line
+	5200 4200 5550 4200
+Wire Wire Line
+	5550 3600 5200 3600
+Text GLabel 5200 3600 0    60   Input ~ 0
+5v
+$Comp
+L R R?
+U 1 1 5893E605
+P 600 1400
+F 0 "R?" V 680 1400 50  0000 C CNN
+F 1 "20K" V 600 1400 50  0000 C CNN
+F 2 "" V 530 1400 50  0000 C CNN
+F 3 "" H 600 1400 50  0000 C CNN
+	1    600  1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  1000 600  1250
+Wire Wire Line
+	600  1550 600  1850
+Wire Wire Line
+	600  1850 650  1850
+Text GLabel 600  2800 1    60   Input ~ 0
+180v
+$Comp
+L R R?
+U 1 1 589B9DB7
+P 600 3250
+F 0 "R?" V 680 3250 50  0000 C CNN
+F 1 "20K" V 600 3250 50  0000 C CNN
+F 2 "" V 530 3250 50  0000 C CNN
+F 3 "" H 600 3250 50  0000 C CNN
+	1    600  3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  2800 600  3100
+Text GLabel 600  6400 1    60   Input ~ 0
+180v
+$Comp
+L R R?
+U 1 1 589BAEE2
+P 600 6850
+F 0 "R?" V 680 6850 50  0000 C CNN
+F 1 "20K" V 600 6850 50  0000 C CNN
+F 2 "" V 530 6850 50  0000 C CNN
+F 3 "" H 600 6850 50  0000 C CNN
+	1    600  6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  6400 600  6700
+Text GLabel 600  4600 1    60   Input ~ 0
+180v
+$Comp
+L R R?
+U 1 1 589BAF3C
+P 600 5050
+F 0 "R?" V 680 5050 50  0000 C CNN
+F 1 "20K" V 600 5050 50  0000 C CNN
+F 2 "" V 530 5050 50  0000 C CNN
+F 3 "" H 600 5050 50  0000 C CNN
+	1    600  5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  4600 600  4900
+Text GLabel 11050 4500 1    60   Input ~ 0
+180v
+$Comp
+L R R?
+U 1 1 589BC0CB
+P 11050 4950
+F 0 "R?" V 11130 4950 50  0000 C CNN
+F 1 "20K" V 11050 4950 50  0000 C CNN
+F 2 "" V 10980 4950 50  0000 C CNN
+F 3 "" H 11050 4950 50  0000 C CNN
+	1    11050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11050 4500 11050 4800
+Text GLabel 11050 2700 1    60   Input ~ 0
+180v
+$Comp
+L R R?
+U 1 1 589BC10F
+P 11050 3150
+F 0 "R?" V 11130 3150 50  0000 C CNN
+F 1 "20K" V 11050 3150 50  0000 C CNN
+F 2 "" V 10980 3150 50  0000 C CNN
+F 3 "" H 11050 3150 50  0000 C CNN
+	1    11050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11050 2700 11050 3000
+Wire Wire Line
+	600  3400 600  3650
+Wire Wire Line
+	600  3650 650  3650
+Wire Wire Line
+	600  5200 600  5450
+Wire Wire Line
+	600  5450 650  5450
+Wire Wire Line
+	600  7000 600  7250
+Wire Wire Line
+	600  7250 650  7250
+Wire Wire Line
+	11000 3550 11050 3550
+Wire Wire Line
+	11050 3550 11050 3300
+Wire Wire Line
+	11000 5350 11050 5350
+Wire Wire Line
+	11050 5350 11050 5100
+Wire Notes Line
+	7350 2050 11200 2050
+Wire Notes Line
+	11200 2050 11200 6000
+Wire Notes Line
+	11200 6000 7350 6000
+Wire Notes Line
+	7350 6000 7350 2050
+Wire Notes Line
+	500  500  4300 500 
+Wire Notes Line
+	4300 500  4300 7750
+Wire Notes Line
+	4300 7750 500  7750
+Wire Notes Line
+	500  7750 500  500 
+Wire Notes Line
+	4300 4100 500  4100
+Wire Notes Line
+	4500 1350 7150 1350
+Wire Notes Line
+	7150 1350 7150 6450
+Wire Notes Line
+	7150 6450 6800 6450
+Wire Notes Line
+	6800 6450 6800 7350
+Wire Notes Line
+	6800 7350 4500 7350
+Wire Notes Line
+	4500 7350 4500 1350
+Text Label 550  600  0    60   ~ 0
+NixieTubesHours
+Text Label 550  4200 0    60   ~ 0
+NixieTubesMinutes
+Text Label 7400 2200 0    60   ~ 0
+NixieTubesSeconds
+Text Label 4600 1500 0    60   ~ 0
+ShiftRegisters
 $EndSCHEMATC
