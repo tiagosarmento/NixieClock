@@ -34,14 +34,14 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "NixieClock"
 Date "2017-02-08"
 Rev "1.0"
 Comp "TiagoSarmentoSantos"
-Comment1 "Nixie Tubes Schema"
-Comment2 "Nixie Drivers Schema"
-Comment3 "Shift Registers Schema"
+Comment1 "Nixie Tubes Schematic"
+Comment2 "Nixie Drivers Schematic"
+Comment3 "Shift Registers Schematic"
 Comment4 ""
 $EndDescr
 $Comp
@@ -1300,9 +1300,15 @@ Text Label 4600 1500 0    60   ~ 0
 ShiftRegisters
 NoConn ~ 6100 6450
 $Sheet
-S 10100 6800 500  150 
+S 8300 6850 500  150 
 U 589CF1A0
 F0 "NixieClock_2" 60
 F1 "NixieClock_2.sch" 60
+$EndSheet
+$Sheet
+S 9500 6850 500  150 
+U 589E922F
+F0 "NixieClock_3" 60
+F1 "NixieClock_3.sch" 60
 $EndSheet
 $EndSCHEMATC
