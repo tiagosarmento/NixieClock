@@ -42,7 +42,7 @@ Comp "TiagoSarmentoSantos"
 Comment1 "Power Management"
 Comment2 "ClockBuzzer"
 Comment3 "TM4C123G Connector"
-Comment4 ""
+Comment4 "Simply Link WiFi CC33100 Connector"
 $EndDescr
 $Comp
 L Regulator U?
@@ -546,4 +546,189 @@ Wire Notes Line
 	600  4400 6300 4400
 Text Label 700  2700 0    60   ~ 0
 ConnectorTM4C123G
+$Comp
+L CONN_01X10 P?
+U 1 1 589F8E29
+P 2250 5650
+F 0 "P?" H 2250 6200 50  0000 C CNN
+F 1 "J1" V 2350 5650 50  0000 C CNN
+F 2 "" H 2250 5650 50  0000 C CNN
+F 3 "" H 2250 5650 50  0000 C CNN
+	1    2250 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 P?
+U 1 1 589F8E30
+P 2600 5650
+F 0 "P?" H 2600 6200 50  0000 C CNN
+F 1 "J3" V 2700 5650 50  0000 C CNN
+F 2 "" H 2600 5650 50  0000 C CNN
+F 3 "" H 2600 5650 50  0000 C CNN
+	1    2600 5650
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1600 5150 0    60   Input ~ 0
+3.3v
+Text GLabel 1600 5300 0    60   Input ~ 0
+PB0_UART1_TX
+Text GLabel 1600 5450 0    60   Input ~ 0
+PB1_UART1_RX
+Text GLabel 1600 5600 0    60   Input ~ 0
+PE4_nHIB
+Text GLabel 1600 5800 0    60   Input ~ 0
+PB4_SPI_CLK
+Wire Wire Line
+	1950 5200 2050 5200
+Text GLabel 3200 5200 2    60   Input ~ 0
+5v
+Text GLabel 3200 5350 2    60   Input ~ 0
+GND
+$Comp
+L CONN_01X10 P?
+U 1 1 589F8E83
+P 5200 5650
+F 0 "P?" H 5200 6200 50  0000 C CNN
+F 1 "J2" V 5300 5650 50  0000 C CNN
+F 2 "" H 5200 5650 50  0000 C CNN
+F 3 "" H 5200 5650 50  0000 C CNN
+	1    5200 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 P?
+U 1 1 589F8E8A
+P 5550 5650
+F 0 "P?" H 5550 6200 50  0000 C CNN
+F 1 "J4" V 5650 5650 50  0000 C CNN
+F 2 "" H 5550 5650 50  0000 C CNN
+F 3 "" H 5550 5650 50  0000 C CNN
+	1    5550 5650
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4550 5100 0    60   Input ~ 0
+GND
+Text GLabel 4550 5250 0    60   Input ~ 0
+PB2_IRQ
+Text GLabel 4550 5400 0    60   Input ~ 0
+PE0_SPI_CS
+Text GLabel 4550 5550 0    60   Input ~ 0
+TARGETRST
+Text GLabel 4550 5700 0    60   Input ~ 0
+PB7_SPI_MOSI
+Text GLabel 4550 5850 0    60   Input ~ 0
+PB6_SPI_MISO
+Wire Wire Line
+	4550 5850 4950 5850
+Wire Wire Line
+	4950 5850 4950 5800
+Wire Wire Line
+	4950 5800 5000 5800
+Wire Wire Line
+	4550 5700 5000 5700
+Wire Wire Line
+	4550 5550 4950 5550
+Wire Wire Line
+	4950 5550 4950 5600
+Wire Wire Line
+	4950 5600 5000 5600
+Text GLabel 6250 5500 2    60   Input ~ 0
+PC4_UART1_CTS
+Text GLabel 6250 5650 2    60   Input ~ 0
+PC5_UART1_RTS
+Text GLabel 6250 5800 2    60   Input ~ 0
+PC7_NWP_LOG_TX
+Text GLabel 6250 5950 2    60   Input ~ 0
+PD6_WLAN_LOG_TX
+Wire Notes Line
+	600  4650 7300 4650
+Wire Notes Line
+	600  4650 600  6500
+Wire Notes Line
+	600  6500 7300 6500
+Text Label 700  4800 0    60   ~ 0
+ConnectorSimplyLinkWiFiCC33100
+NoConn ~ 2800 5400
+NoConn ~ 2800 5500
+NoConn ~ 2800 5600
+NoConn ~ 2800 5700
+NoConn ~ 2800 5800
+NoConn ~ 2800 5900
+NoConn ~ 2800 6000
+NoConn ~ 2800 6100
+NoConn ~ 2050 6100
+NoConn ~ 2050 6000
+NoConn ~ 2050 5900
+NoConn ~ 2050 5700
+NoConn ~ 2050 5300
+Wire Wire Line
+	1600 5600 2050 5600
+Wire Wire Line
+	2050 5500 1800 5500
+Wire Wire Line
+	1800 5500 1800 5450
+Wire Wire Line
+	1800 5450 1600 5450
+Wire Wire Line
+	2050 5400 1900 5400
+Wire Wire Line
+	1900 5400 1900 5300
+Wire Wire Line
+	1900 5300 1600 5300
+Wire Wire Line
+	1950 5200 1950 5150
+Wire Wire Line
+	1950 5150 1600 5150
+Wire Wire Line
+	1600 5800 2050 5800
+Wire Wire Line
+	2800 5200 3200 5200
+Wire Wire Line
+	2800 5300 3000 5300
+Wire Wire Line
+	3000 5300 3000 5350
+Wire Wire Line
+	3000 5350 3200 5350
+NoConn ~ 5750 5200
+NoConn ~ 5750 5300
+NoConn ~ 5750 5400
+NoConn ~ 5750 5700
+NoConn ~ 5750 6000
+NoConn ~ 5750 6100
+NoConn ~ 5000 6100
+NoConn ~ 5000 6000
+NoConn ~ 5000 5900
+NoConn ~ 5000 5500
+Wire Wire Line
+	6250 5500 5750 5500
+Wire Wire Line
+	5750 5600 6050 5600
+Wire Wire Line
+	6050 5600 6050 5650
+Wire Wire Line
+	6050 5650 6250 5650
+Wire Wire Line
+	6250 5800 5750 5800
+Wire Wire Line
+	5750 5900 6050 5900
+Wire Wire Line
+	6050 5900 6050 5950
+Wire Wire Line
+	6050 5950 6250 5950
+Wire Wire Line
+	4550 5400 5000 5400
+Wire Wire Line
+	5000 5300 4800 5300
+Wire Wire Line
+	4800 5300 4800 5250
+Wire Wire Line
+	4800 5250 4550 5250
+Wire Wire Line
+	4550 5100 4850 5100
+Wire Wire Line
+	4850 5100 4850 5200
+Wire Wire Line
+	4850 5200 5000 5200
+Wire Notes Line
+	7300 6500 7300 4650
 $EndSCHEMATC
