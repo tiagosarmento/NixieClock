@@ -40,7 +40,7 @@ Date "2017-02-09"
 Rev "1.0"
 Comp "TiagoSarmentoSantos"
 Comment1 "Power Management"
-Comment2 "ClockBuzzer"
+Comment2 "ClockBuzzer and RTC"
 Comment3 "TM4C123G Connector"
 Comment4 "Simply Link WiFi CC33100 Connector"
 $EndDescr
@@ -424,23 +424,12 @@ Wire Wire Line
 $Comp
 L Speaker LS?
 U 1 1 589EE6BD
-P 6700 1150
-F 0 "LS?" H 6750 1375 50  0000 R CNN
-F 1 "Buzzer" H 6750 1300 50  0000 R CNN
-F 2 "" H 6700 950 50  0000 C CNN
-F 3 "" H 6690 1100 50  0000 C CNN
-	1    6700 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L UA9637 U?
-U 1 1 589EE738
-P 5750 1150
-F 0 "U?" H 5750 1250 50  0000 C CNN
-F 1 "UA9637" H 5750 1050 50  0000 C CNN
-F 2 "" H 5750 1150 50  0000 C CNN
-F 3 "" H 5750 1150 50  0000 C CNN
-	1    5750 1150
+P 7600 1400
+F 0 "LS?" H 7650 1625 50  0000 R CNN
+F 1 "Buzzer" H 7650 1550 50  0000 R CNN
+F 2 "" H 7600 1200 50  0000 C CNN
+F 3 "" H 7590 1350 50  0000 C CNN
+	1    7600 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -485,55 +474,27 @@ Wire Notes Line
 	4200 2300 4200 650 
 Wire Notes Line
 	4200 650  600  650 
-Text GLabel 5000 1350 3    60   Input ~ 0
-ucPortX
-Text GLabel 4700 1350 3    60   Input ~ 0
-GND
-Wire Wire Line
-	5000 1350 5000 1250
-Wire Wire Line
-	5000 1250 5250 1250
-Wire Wire Line
-	4700 1350 4700 1050
-Wire Wire Line
-	4700 1050 5250 1050
-Wire Wire Line
-	6250 1150 6500 1150
-Connection ~ 6350 1150
 $Comp
 L R R?
 U 1 1 589F0598
-P 5600 1900
-F 0 "R?" V 5680 1900 50  0000 C CNN
-F 1 "10K" V 5600 1900 50  0000 C CNN
-F 2 "" V 5530 1900 50  0000 C CNN
-F 3 "" H 5600 1900 50  0000 C CNN
-	1    5600 1900
+P 6450 850
+F 0 "R?" V 6530 850 50  0000 C CNN
+F 1 "10K" V 6450 850 50  0000 C CNN
+F 2 "" V 6380 850 50  0000 C CNN
+F 3 "" H 6450 850 50  0000 C CNN
+	1    6450 850 
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5200 1250 5200 1900
-Wire Wire Line
-	5200 1900 5450 1900
-Connection ~ 5200 1250
-Wire Wire Line
-	5750 1900 6350 1900
-Wire Wire Line
-	6350 1900 6350 1150
-Text GLabel 6450 1350 3    60   Input ~ 0
+Text GLabel 7300 1800 3    60   Input ~ 0
 GND
 Wire Wire Line
-	6450 1350 6450 1250
-Wire Wire Line
-	6450 1250 6500 1250
+	7300 1500 7400 1500
 Wire Notes Line
 	4450 650  4450 2300
 Wire Notes Line
-	4450 2300 7050 2300
+	4450 2300 7950 2300
 Wire Notes Line
-	7050 2300 7050 650 
-Wire Notes Line
-	7050 650  4450 650 
+	4450 650  7950 650 
 Text Label 4500 800  0    60   ~ 0
 ClockBuzzer
 Wire Notes Line
@@ -731,4 +692,244 @@ Wire Wire Line
 	4850 5200 5000 5200
 Wire Notes Line
 	7300 6500 7300 4650
+Text GLabel 4950 1300 0    60   Input ~ 0
+PD3
+Text GLabel 4950 1550 0    60   Input ~ 0
+PD2
+Text GLabel 4950 1800 0    60   Input ~ 0
+PD1
+Text GLabel 4950 2050 0    60   Input ~ 0
+PD0
+$Comp
+L R R?
+U 1 1 58B08DE8
+P 5300 1300
+F 0 "R?" V 5380 1300 50  0000 C CNN
+F 1 "1.5K" V 5300 1300 50  0000 C CNN
+F 2 "" V 5230 1300 50  0000 C CNN
+F 3 "" H 5300 1300 50  0000 C CNN
+	1    5300 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58B08F44
+P 5300 1550
+F 0 "R?" V 5380 1550 50  0000 C CNN
+F 1 "3K" V 5300 1550 50  0000 C CNN
+F 2 "" V 5230 1550 50  0000 C CNN
+F 3 "" H 5300 1550 50  0000 C CNN
+	1    5300 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58B08FBA
+P 5300 1800
+F 0 "R?" V 5380 1800 50  0000 C CNN
+F 1 "6K" V 5300 1800 50  0000 C CNN
+F 2 "" V 5230 1800 50  0000 C CNN
+F 3 "" H 5300 1800 50  0000 C CNN
+	1    5300 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58B09887
+P 5300 2050
+F 0 "R?" V 5380 2050 50  0000 C CNN
+F 1 "12K" V 5300 2050 50  0000 C CNN
+F 2 "" V 5230 2050 50  0000 C CNN
+F 3 "" H 5300 2050 50  0000 C CNN
+	1    5300 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 1300 5150 1300
+Wire Wire Line
+	4950 1550 5150 1550
+Wire Wire Line
+	4950 1800 5150 1800
+Wire Wire Line
+	4950 2050 5150 2050
+$Comp
+L UA9637 U?
+U 1 1 589EE738
+P 6500 1400
+F 0 "U?" H 6500 1500 50  0000 C CNN
+F 1 "UA9637" H 6500 1300 50  0000 C CNN
+F 2 "" H 6500 1400 50  0000 C CNN
+F 3 "" H 6500 1400 50  0000 C CNN
+	1    6500 1400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6000 1300 5450 1300
+Wire Wire Line
+	5450 1550 5650 1550
+Wire Wire Line
+	5650 850  5650 2050
+Connection ~ 5650 1300
+Wire Wire Line
+	5650 1800 5450 1800
+Connection ~ 5650 1550
+Wire Wire Line
+	5650 2050 5450 2050
+Connection ~ 5650 1800
+Wire Wire Line
+	6300 850  5650 850 
+Wire Wire Line
+	6600 850  7200 850 
+Wire Wire Line
+	7200 850  7200 1400
+Wire Wire Line
+	7000 1400 7400 1400
+Connection ~ 7200 1400
+Text GLabel 5850 1800 3    60   Input ~ 0
+GND
+Wire Wire Line
+	5850 1800 5850 1500
+Wire Wire Line
+	5850 1500 6000 1500
+Wire Wire Line
+	7300 1800 7300 1500
+Wire Notes Line
+	7950 650  7950 2300
+Wire Notes Line
+	8200 650  8200 2300
+Wire Notes Line
+	8200 2300 11100 2300
+Wire Notes Line
+	11100 2300 11100 650 
+Wire Notes Line
+	11100 650  8200 650 
+Text Label 8250 800  0    60   ~ 0
+RTC
+$Comp
+L CONN_01X02 P?
+U 1 1 58B0D363
+P 9550 1200
+F 0 "P?" H 9550 1350 50  0000 C CNN
+F 1 "RTC CONNECTOR" V 9650 1200 50  0000 C CNN
+F 2 "" H 9550 1200 50  0000 C CNN
+F 3 "" H 9550 1200 50  0000 C CNN
+	1    9550 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 1100 0    60   Input ~ 0
+PA6
+Text GLabel 8800 1350 0    60   Input ~ 0
+PA7
+Wire Wire Line
+	8800 1100 9050 1100
+Wire Wire Line
+	9050 1100 9050 1150
+Wire Wire Line
+	9050 1150 9350 1150
+Wire Wire Line
+	8800 1350 9050 1350
+Wire Wire Line
+	9050 1350 9050 1250
+Wire Wire Line
+	9050 1250 9350 1250
+Wire Notes Line
+	6650 2550 6650 4400
+Wire Notes Line
+	11150 2550 11150 5750
+Wire Notes Line
+	11150 2550 6650 2550
+Text Label 6800 2700 0    60   ~ 0
+Switch
+$Comp
+L SwitchONOFF U?
+U 1 1 58B0E031
+P 7400 4000
+F 0 "U?" H 8400 4850 60  0000 C CNN
+F 1 "SwitchONOFF" H 8400 5000 60  0000 C CNN
+F 2 "" H 8400 4850 60  0001 C CNN
+F 3 "" H 8400 4850 60  0001 C CNN
+	1    7400 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 7600 2800 0    60   Input ~ 0
+PF4
+Wire Wire Line
+	7600 2800 7850 2800
+Text GLabel 7700 3650 3    60   Input ~ 0
+GND
+Wire Wire Line
+	7700 3650 7700 3350
+Wire Wire Line
+	7700 3350 7850 3350
+$Comp
+L SwitchONOFF U?
+U 1 1 58B0E87C
+P 9250 3950
+F 0 "U?" H 10250 4800 60  0000 C CNN
+F 1 "SwitchONOFF" H 10250 4950 60  0000 C CNN
+F 2 "" H 10250 4800 60  0001 C CNN
+F 3 "" H 10250 4800 60  0001 C CNN
+	1    9250 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 9450 2750 0    60   Input ~ 0
+PF0
+Wire Wire Line
+	9450 2750 9700 2750
+Text GLabel 9550 3600 3    60   Input ~ 0
+GND
+Wire Wire Line
+	9550 3600 9550 3300
+Wire Wire Line
+	9550 3300 9700 3300
+$Comp
+L SwitchONOFF U?
+U 1 1 58B0F1ED
+P 7400 5450
+F 0 "U?" H 8400 6300 60  0000 C CNN
+F 1 "SwitchONOFF" H 8400 6450 60  0000 C CNN
+F 2 "" H 8400 6300 60  0001 C CNN
+F 3 "" H 8400 6300 60  0001 C CNN
+	1    7400 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 7600 4250 0    60   Input ~ 0
+PXX
+Wire Wire Line
+	7600 4250 7850 4250
+Text GLabel 7700 5100 3    60   Input ~ 0
+GND
+Wire Wire Line
+	7700 5100 7700 4800
+Wire Wire Line
+	7700 4800 7850 4800
+$Comp
+L SwitchONOFF U?
+U 1 1 58B0F1F9
+P 9250 5400
+F 0 "U?" H 10250 6250 60  0000 C CNN
+F 1 "SwitchONOFF" H 10250 6400 60  0000 C CNN
+F 2 "" H 10250 6250 60  0001 C CNN
+F 3 "" H 10250 6250 60  0001 C CNN
+	1    9250 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 9450 4200 0    60   Input ~ 0
+PXX
+Wire Wire Line
+	9450 4200 9700 4200
+Text GLabel 9550 5050 3    60   Input ~ 0
+GND
+Wire Wire Line
+	9550 5050 9550 4750
+Wire Wire Line
+	9550 4750 9700 4750
+Wire Notes Line
+	11150 5750 7400 5750
+Wire Notes Line
+	7400 5750 7400 4550
+Wire Notes Line
+	7400 4550 6650 4550
+Wire Notes Line
+	6650 4550 6650 4350
 $EndSCHEMATC

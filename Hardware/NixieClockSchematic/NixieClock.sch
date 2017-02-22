@@ -755,18 +755,8 @@ Text GLabel 6450 6600 2    60   Input ~ 0
 GND
 Wire Wire Line
 	6450 6600 6100 6600
-Text GLabel 6450 2050 2    60   Input ~ 0
-uc PORTX
 Wire Wire Line
 	6450 2050 6100 2050
-Text GLabel 6450 2650 2    60   Input ~ 0
-uc PORTX
-Wire Wire Line
-	6450 2650 6100 2650
-Text GLabel 6450 2200 2    60   Input ~ 0
-uc PORTX
-Wire Wire Line
-	6450 2200 6100 2200
 Text GLabel 6450 2500 2    60   Input ~ 0
 GND
 Wire Wire Line
@@ -779,14 +769,6 @@ Wire Wire Line
 	6100 6000 6450 6000
 Text GLabel 6450 6000 2    60   Input ~ 0
 5v
-Text GLabel 6450 5850 2    60   Input ~ 0
-uc PORTX
-Wire Wire Line
-	6450 5850 6100 5850
-Text GLabel 6450 6300 2    60   Input ~ 0
-uc PORTX
-Wire Wire Line
-	6450 6300 6100 6300
 Text GLabel 6450 6150 2    60   Input ~ 0
 GND
 Wire Wire Line
@@ -819,14 +801,6 @@ Wire Wire Line
 	5550 4050 5200 4050
 Text GLabel 5200 4050 0    60   Input ~ 0
 5v
-Text GLabel 5200 3900 0    60   Input ~ 0
-uc PORTX
-Wire Wire Line
-	5200 3900 5550 3900
-Text GLabel 5200 4350 0    60   Input ~ 0
-uc PORTX
-Wire Wire Line
-	5200 4350 5550 4350
 Text GLabel 5200 4200 0    60   Input ~ 0
 GND
 Wire Wire Line
@@ -966,9 +940,7 @@ Wire Notes Line
 Wire Notes Line
 	4300 4100 500  4100
 Wire Notes Line
-	4500 1350 7150 1350
-Wire Notes Line
-	7150 1350 7150 6450
+	7150 500  7150 6450
 Wire Notes Line
 	7150 6450 6800 6450
 Wire Notes Line
@@ -980,10 +952,8 @@ Wire Notes Line
 Text Label 550  600  0    60   ~ 0
 NixieTubesHours
 Text Label 550  4200 0    60   ~ 0
-NixieTubesMinutes
-Text Label 7400 2200 0    60   ~ 0
 NixieTubesSeconds
-Text Label 4600 1500 0    60   ~ 0
+Text Label 4550 650  0    60   ~ 0
 ShiftRegisters
 $Comp
 L K155ID1 U?
@@ -1184,32 +1154,18 @@ Text GLabel 6450 2950 2    60   Input ~ 0
 GND
 Text GLabel 6450 6600 2    60   Input ~ 0
 GND
-Text GLabel 6450 2050 2    60   Input ~ 0
-uc PORTX
-Text GLabel 6450 2650 2    60   Input ~ 0
-uc PORTX
-Text GLabel 6450 2200 2    60   Input ~ 0
-uc PORTX
 Text GLabel 6450 2500 2    60   Input ~ 0
 GND
 Text GLabel 6450 2350 2    60   Input ~ 0
 5v
 Text GLabel 6450 6000 2    60   Input ~ 0
 5v
-Text GLabel 6450 5850 2    60   Input ~ 0
-uc PORTX
-Text GLabel 6450 6300 2    60   Input ~ 0
-uc PORTX
 Text GLabel 6450 6150 2    60   Input ~ 0
 GND
 Text GLabel 5200 4650 0    60   Input ~ 0
 GND
 Text GLabel 5200 4050 0    60   Input ~ 0
 5v
-Text GLabel 5200 3900 0    60   Input ~ 0
-uc PORTX
-Text GLabel 5200 4350 0    60   Input ~ 0
-uc PORTX
 Text GLabel 5200 4200 0    60   Input ~ 0
 GND
 Text GLabel 5200 3600 0    60   Input ~ 0
@@ -1292,11 +1248,11 @@ F 3 "" H 11050 3150 50  0000 C CNN
 $EndComp
 Text Label 550  600  0    60   ~ 0
 NixieTubesHours
-Text Label 550  4200 0    60   ~ 0
-NixieTubesMinutes
 Text Label 7400 2200 0    60   ~ 0
+NixieTubesMinutes
+Text Label 550  4200 0    60   ~ 0
 NixieTubesSeconds
-Text Label 4600 1500 0    60   ~ 0
+Text Label 4550 650  0    60   ~ 0
 ShiftRegisters
 NoConn ~ 6100 6450
 $Sheet
@@ -1311,4 +1267,55 @@ U 589E922F
 F0 "NixieClock_3" 60
 F1 "NixieClock_3.sch" 60
 $EndSheet
+Text GLabel 6450 2050 2    60   Input ~ 0
+PE1_SER_DS
+Text GLabel 6200 5850 2    60   Input ~ 0
+PE3_SHCP_SRCLK
+Text GLabel 6250 6300 2    60   Input ~ 0
+PE2_STCP_RCLK
+Text GLabel 5400 3900 0    60   Input ~ 0
+PE3_SHCP_SRCLK
+Wire Wire Line
+	5400 3900 5550 3900
+Text GLabel 6250 2200 2    60   Input ~ 0
+PE3_SHCP_SRCLK
+Wire Wire Line
+	6100 2200 6250 2200
+Wire Wire Line
+	6100 5850 6200 5850
+Text GLabel 6300 2650 2    60   Input ~ 0
+PE2_STCP_RCLK
+Wire Wire Line
+	6300 2650 6100 2650
+Text GLabel 5350 4350 0    60   Input ~ 0
+PE2_STCP_RCLK
+Wire Wire Line
+	6250 6300 6100 6300
+Wire Wire Line
+	5550 4350 5350 4350
+$Comp
+L CP1 C?
+U 1 1 58B1C688
+P 5950 1100
+F 0 "C?" H 5975 1200 50  0000 L CNN
+F 1 "CP1" H 5975 1000 50  0000 L CNN
+F 2 "" H 5950 1100 50  0000 C CNN
+F 3 "" H 5950 1100 50  0000 C CNN
+	1    5950 1100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7150 500  4500 500 
+Wire Notes Line
+	4500 500  4500 1400
+Text GLabel 5550 850  0    60   Input ~ 0
+PE2_STCP_RCLK
+Wire Wire Line
+	5550 850  5950 850 
+Wire Wire Line
+	5950 850  5950 950 
+Text GLabel 5950 1400 3    60   Input ~ 0
+GND
+Wire Wire Line
+	5950 1250 5950 1400
 $EndSCHEMATC
